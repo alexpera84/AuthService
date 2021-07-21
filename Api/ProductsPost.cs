@@ -19,6 +19,7 @@ namespace Api
             this.productData = productData;
         }
 
+
         [FunctionName("ProductsPost")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "products")] HttpRequest req,
